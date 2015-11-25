@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="kiaanfx.jnlp">
+  <information>
+    <title>kiaanfx</title>
+    <vendor>mostafa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="kiaanfx.jar" size="108998" download="eager" />
+    <jar href="lib/java-json.jar" size="84697" download="eager" />
+    <jar href="lib/mongo-java-driver-3.0.4.jar" size="1286926" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="kiaanfx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="kiaanfx.main"  name="kiaanfx" />
+  <update check="always"/>
+</jnlp>
