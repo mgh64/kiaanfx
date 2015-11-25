@@ -1,0 +1,12 @@
+db.banks.aggregate([
+    { $unwind: '$branches'},    
+    {
+        $project: {
+            _id: 0,	    
+	    name: '$name',
+	    branch_id: '$branches.branch_id',
+	    branch_name: '$branches.name'
+        }
+    },
+    { $sort : { "name" : 1 } }
+])
